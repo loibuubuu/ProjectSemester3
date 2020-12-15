@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Utility.Categories>
+<ul class="dropdown">
+    @foreach (var item in Model)
+    {
+        
+        @item.CategoriesName
+        <!--<li>
+            <a href="#">@item.CategoriesName</a>
+            @if (item.CategoriesID == 202)
+            {
+                @await Component.InvokeAsync("CategoryChild")
+            }
+            @if (item.CategoriesID == 203)
+            {
+                @await Component.InvokeAsync("CategoryChildME")
+            }-->
+            @*<ul class="dropdown">
+                    <li><a href="@url.action("@item.name","Home")">@ViewBag.CategoryChild202</a></li>
+                </ul>*@
+        <!--</li>-->
+    }
+</ul>

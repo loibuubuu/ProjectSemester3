@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Utility.DoctorDetail>
+@foreach (var item in Model)
+{
+    <div class="thumb"><img alt="" src="@item.DrImage" class="img-fullwidth"></div>
+    <div class="info">
+        @await Component.InvokeAsync("Accounts")
+        <h5 class="occupation text-gray">@item.Specialist</h5>
+        <ul class="styled-icons icon-theme-colored icon-circled icon-dark icon-sm mt-10 mb-0">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+        </ul>
+    </div>
+}

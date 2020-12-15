@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Utility.Medicines>
+<ul class="dropdown">
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="#">@item.MedicineName</a>
+            @*<ul class="dropdown">
+                    <li><a href="page-about1.html">@item.CategoriesName</a></li>
+                </ul>*@
+        </li>
+    }
+</ul>
